@@ -1,0 +1,45 @@
+import React, { useState } from 'react'
+import { Col, Row } from 'react-bootstrap'
+import Add from './Add'
+import View from './View'
+import Category from './Category'
+import { Link } from 'react-router-dom'
+
+
+
+
+
+
+function Homepage() {
+
+  const [serverRes,setServerResponse]=useState({})
+
+  const handleResponse=(res)=>{
+    setServerResponse(res)
+  }
+  console.log(serverRes);
+  return (
+    <>
+      <div>
+        <h1 className='text-info ms-5 mb-5'>All Videocards</h1>
+        <Link to={'/watchhistory'} className='d-flex justify-content-end mb-5' style={{textDecoration:'none',fontSize:'25px',color:"blue"}}>watch history</Link>
+        <Row>
+          <Col lg={1}>
+         <Add handleRes={handleResponse}/>
+          </Col>
+
+          <Col lg={7}>
+            <View serverRes={serverRes}/>
+          </Col>
+
+
+          <Col lg={4}>
+          <Category/>
+          </Col>
+        </Row>
+        </div>
+    </>
+  )
+}
+
+export default Homepage

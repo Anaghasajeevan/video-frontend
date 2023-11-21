@@ -1,0 +1,57 @@
+
+
+
+REACT ----- JS library (front end development)
+---------------------------------------------------
+
+Basic command
+
+- to create project : npm create-react-app projectname
+
+- to run project : npm start
+
+BASIC CONCEPTS
+
+- its a single page application
+
+- reusable component based approach
+
+- jsx - java script and xml 
+
+- fast run
+
+front end diff 
+
+CONCEPT         angular             react                      vue  
+--------------------------------------------------------------------
+1.developer     framework-google    library--mrta/facebook     framework-open source
+
+2.language      typescript          javascript                 javascript
+
+3.Dom           real dom            virtual dom                virtual dom
+
+4.data sharing  two data binding    one way data binding       two way data binding
+
+REACT IS A COMPONENTS BASED APPLICATION
+
+COMPONENTS : if we creat a component file will start with a capital latter otherwise we cant get two type of components
+
+            Two type of COMPONENTS
+
+            1.class based components....stateful component
+
+            2. function based components ......stateless component
+
+            react hook...is a pre defined function and name start with use key word 
+            use predefined-function ()
+
+            use state() 
+
+            syntax for state creation : const[statename,statevaluepadtionfunction]=usestate()
+
+STATE : is used to store values (also state has as advantage to transfer value) we can share state to child component 
+
+
+props : is used share data between parent and child
+
+conditional rendering : 
